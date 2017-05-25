@@ -61,9 +61,8 @@ set autoread
 au CursorHold * checktime
 
 " No annoying sound on errors
-set noerrorbells
-set novisualbell
-set t_vb=
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
 set tm=500
 
 set clipboard=unnamedplus
