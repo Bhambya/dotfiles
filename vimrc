@@ -51,6 +51,9 @@ call matchadd('TrailingWhitespace', '\ \+$', -1)
 highlight IndentTabs ctermbg=grey guibg=grey
 call matchadd('IndentTabs', '^\t\+', -1, 55)
 
+" allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
 " ================ Turn Off Swap Files ==============
 set noswapfile
 set nobackup
