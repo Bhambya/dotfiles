@@ -68,10 +68,11 @@ set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
 set tm=500
 
-set clipboard=if system('uname -s') == "Darwin\n"
+if system('uname -s') == "Darwin\n"
   set clipboard=unnamed "OSX
 else
   set clipboard=unnamedplus "Linux
+endif
 
 " for vim-airline
 set laststatus=2
